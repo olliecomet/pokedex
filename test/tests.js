@@ -1,5 +1,5 @@
 // import utilities and custom assertions
 import './html-equal.js';
 // import tests
-import './CatItem.test.js';
-import './FilterCats.test.js';
+import './PokemonItem.test.js';
+import './FilterPokemon.test.js';
