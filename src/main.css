@@ -1,0 +1,32 @@
+body {
+    background-color: grey;
+}
+
+header div {
+    background-color: pink;
+}
+
+header div img {
+    width: 100px;
+}
+
+nav div {
+    background-color: pink;
+}
+
+main ul {
+    padding: 0;
+}
+
+main ul li {
+    background-color: pink;
+    list-style: none;
+    display: inline-block;
+    margin: 16px;
+    margin-left: 0;
+}
+
+main ul li img {
+    width: 225px;
+}
+
