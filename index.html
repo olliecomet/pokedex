@@ -5,124 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokemon</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="src/main.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Pokedex</h1>
-        </div>
-    </header>
 
-    <nav>
-        <div>
-            <form>
-                <input name="search" type="text">
-                <button id="search-button">Search</button>
-            </form>
-    
-            <select value="filter">
-                <option>Name</option>
-                <option>Type</option>
-                <option>Attack</option>
-                <option>Defence</option>
-                <option>HP</option>
-            </select>
-        </div>
-    </nav>
+    <div class="wrapper">
 
-    <main>
-        <ul>
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
-                <h3>Bulbasaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
+        <header class="main-header">
+            <div>
+                <h1>Pokedex</h1>
+            </div>
+        </header>
 
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
-                <h3>Ivysaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
+        <nav class="main-nav">
+            <div>
+                <form>
+                    <input name="search" type="text">
+                    <button id="search-button">Search</button>
+                </form>
 
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Ivysaur">
-                <h3>Venusaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>   
+                <select value="filter">
+                    <option>Name</option>
+                    <option>Type</option>
+                    <option>Attack</option>
+                    <option>Defence</option>
+                    <option>HP</option>
+                </select>
+            </div>
+        </nav>
 
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
-                <h3>Bulbasaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
-    
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
-                <h3>Ivysaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
+        <main class="main-content">
+            <ul>
+                <li>
+                    <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+                    <h3>Bulbasaur</h3>
+                    <p>Type 1: Grass Type 2: Poison</p>
+                </li>
 
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Ivysaur">
-                <h3>Venusaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
+                <li>
+                    <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
+                    <h3>Ivysaur</h3>
+                    <p>Type 1: Grass Type 2: Poison</p>
+                </li>
+
+                <li>
+                    <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Ivysaur">
+                    <h3>Venusaur</h3>
+                    <p>Type 1: Grass Type 2: Poison</p>
+                </li>   
+
+                <li>
+                    <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+                    <h3>Bulbasaur</h3>
+                    <p>Type 1: Grass Type 2: Poison</p>
+                </li>
             
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
-                <h3>Bulbasaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
-    
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
-                <h3>Ivysaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
+                <li>
+                    <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
+                    <h3>Ivysaur</h3>
+                    <p>Type 1: Grass Type 2: Poison</p>
+                </li>
 
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Ivysaur">
-                <h3>Venusaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
+                <li>
+                    <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Ivysaur">
+                    <h3>Venusaur</h3>
+                    <p>Type 1: Grass Type 2: Poison</p>
+                </li>
 
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
-                <h3>Bulbasaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
-    
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
-                <h3>Ivysaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
-
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Ivysaur">
-                <h3>Venusaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
+                <li>
+                    <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+                    <h3>Bulbasaur</h3>
+                    <p>Type 1: Grass Type 2: Poison</p>
+                </li>
             
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
-                <h3>Bulbasaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
-        
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
-                <h3>Ivysaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>
+                <li>
+                    <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
+                    <h3>Ivysaur</h3>
+                    <p>Type 1: Grass Type 2: Poison</p>
+                </li>
 
-            <li>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Ivysaur">
-                <h3>Venusaur</h3>
-                <p>Type 1: Grass Type 2: Poison</p>
-            </li>   
-        </ul>    
+                <li>
+                    <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Ivysaur">
+                    <h3>Venusaur</h3>
+                    <p>Type 1: Grass Type 2: Poison</p>
+                </li>
+            </ul>
+
+        </div>
+          
     </main>
 
     <!--
