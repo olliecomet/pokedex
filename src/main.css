@@ -1,32 +1,82 @@
 body {
-    background-color: grey;
+    background-color: lightblue;
+    font-family: arial;
+    margin: 16px;
+}
+
+h1, h3 {
+    font-family: Impact;
+    letter-spacing: 2px;
+    color: lightseagreen;
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: -4px; 
 }
 
 header div {
-    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightyellow;
+    height: 110px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-header div img {
-    width: 100px;
+div img {
+    height: 150%;
 }
 
 nav div {
-    background-color: pink;
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: center;
+    height: 100px;
 }
 
-main ul {
+form {
+    align-self: center;
+    margin-right: 5%;   
+}
+
+form input {
+    height: 25px;
+}
+
+nav button {
+    margin-left: 0px;
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+}
+
+nav select {
+    height: 30px;
+    width: 100px;
+    align-self: center;
+}
+
+ul {
     padding: 0;
 }
 
-main ul li {
-    background-color: pink;
+li {
+    background-color: lightyellow;
     list-style: none;
     display: inline-block;
     margin: 16px;
     margin-left: 0;
+    border-radius: 5%;
+    text-align: center;
+    border: 5px solid lightslategrey; 
 }
 
-main ul li img {
-    width: 225px;
+li img {
+    max-width: 225px;
 }
 
+li p {
+    font-size: 16px;
+}
