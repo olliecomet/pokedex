@@ -6,9 +6,9 @@ class PokemonItem extends Component {
 
         return /*html*/`
             <li class="pokemon-item">
-                <img src="${pokemon.url}" alt="${pokemon.name}">
-                <h3>${pokemon.name}</h3>
-                <p class="pokemon-type">${pokemon.type}</p>
+                <img src="${pokemon.url_image}" alt="${pokemon.pokemon}">
+                <h3>${pokemon.pokemon}</h3>
+                <p class="pokemon-type">${pokemon.type_1} ${pokemon.type_2}</p>
             </li>
         `;
     }

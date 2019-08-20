@@ -4,7 +4,7 @@ import PokemonItem from './PokemonItem.js';
 class PokemonList extends Component {
     onRender(dom) {
         const pokemonPlural = this.props.pokemonData;
-        console.log(pokemonPlural);
+        
         pokemonPlural.forEach(pokemon => {
             const props = { pokemon: pokemon };
             const pokemonItem = new PokemonItem(props);

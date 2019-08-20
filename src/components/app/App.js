@@ -2,8 +2,6 @@ import Component from '../Component.js';
 import Header from './Header.js';
 import PokemonList from '../pokemon/PokemonList.js';
 import FilterPokemon from '../options/FilterPokemon.js';
-import pokemonData from '../../../data/pokemon.json';
-
 class App extends Component {
 
     onRender(dom) {
@@ -12,7 +10,6 @@ class App extends Component {
         dom.prepend(headerDOM);
 
         const pokemonList = new PokemonList({ pokemonData: [] });
-        console.log(pokemonList);
         const pokemonListDOM = pokemonList.renderDOM();
         const listSection = dom.querySelector('.list-section');
         listSection.appendChild(pokemonListDOM);
@@ -26,15 +23,16 @@ class App extends Component {
             });
 
         const filterPokemonProps = {
-            pokemonData: pokemonData,
+            pokemonData: pokemonList,
+
             onFilter: (pokemonType) => {
                 let filteredPokemon;
 
                 if(pokemonType === 'all') {
-                    filteredPokemon = pokemonData;
+                    filteredPokemon = pokemonList;
                 }
                 else {
-                    filteredPokemon = pokemonData.filter(pokemon => {
+                    filteredPokemon = pokemonList.filter(pokemon => {
                         return pokemon.type === pokemonType;
                     });
                 }

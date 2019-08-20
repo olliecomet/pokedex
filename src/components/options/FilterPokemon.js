@@ -10,8 +10,8 @@ class FilterPokemon extends Component {
     }
 
     renderHTML() {
-        const pokemonPlural = this.props.pokemonPlural;
-        const types = getPokemonTypes(pokemonPlural);
+        const pokemonData = this.props.pokemonData;
+        const types = getPokemonTypes(pokemonData);
         const optionsHTML = renderOptionsHTML(types);
 
         return /*html*/`
@@ -26,7 +26,8 @@ class FilterPokemon extends Component {
 function getPokemonTypes(pokemonPlural) {
     const types = [];
 
-    pokemonPlural.forEach(pokemon => {
+    pokemonPlural.props.pokemonData.forEach(pokemon => {
+
         if(!types.includes(pokemon.type)) {
             types.puch(pokemon.type);
         }
