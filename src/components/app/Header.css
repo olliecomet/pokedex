@@ -1,3 +1,18 @@
-.main-header {
-    
+.main-header div {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightyellow;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-header div h1 {
+    font-family: Impact;
+    letter-spacing: 2px;
+    color: lightseagreen;
+    font-size: 25px;
+    font-size: 80px;
+    margin-top: -4px; 
 }
