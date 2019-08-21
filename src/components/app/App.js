@@ -14,12 +14,12 @@ class App extends Component {
         const listSection = dom.querySelector('.list-section');
         listSection.appendChild(pokemonListDOM);
 
-        const url = 'data/pokemon.json';
+        const url = 'https://alchemy-pokedex.herokuapp.com/api/pokedex';
 
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                pokemonList.update({ pokemonData: data });
+                pokemonList.update({ pokemonData: data.results });
             });
 
         const filterPokemonProps = {

@@ -4,7 +4,6 @@ function getPokemon() {
     return fetch(URL)
         .then(response => response.json())
         .then(results => {
-            
             return {
                 results: results
             };
