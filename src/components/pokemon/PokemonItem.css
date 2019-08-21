@@ -1,0 +1,24 @@
+.pokemon-item {
+    background-color: lightyellow;
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5%;
+    text-align: center;
+    border: 5px solid lightslategrey;
+}
+
+.pokemon-item img {
+    max-width: 225px;
+}
+
+.pokemon-item h3 {
+    font-family: Impact;
+    letter-spacing: 2px;
+    color: lightseagreen;
+    font-size: 25px;
+}
+
+.pokemon-type {
+    font-size: 16px;
+}
