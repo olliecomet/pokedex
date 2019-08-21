@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 15px;
+    margin-top: 15px;
 }
 
 #search-button {
@@ -25,6 +26,8 @@
     border: 5px solid lightseagreen;
     background-color: lightslategrey;
     min-width: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 .main-nav div {
